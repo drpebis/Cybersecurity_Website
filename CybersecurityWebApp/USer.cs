@@ -9,14 +9,12 @@ namespace CybersecurityWebApp
 {
     class User
     {
-        //This is a primitive version of how to store employees and passwords
-        //add in some sort of encryption
         private string loginName;
         private string password;
         Lists l = new Lists();
         private int loop = 0;
 
-        public void CreateUser()
+        public void CreateUser() //Adds all entered user information to its respective list
         {
             Console.WriteLine("\nCreate a new user:\n");
             Console.Write("Enter Login Name: ");
@@ -29,38 +27,17 @@ namespace CybersecurityWebApp
             }
             Console.Write("Enter Password: ");
             this.password = Console.ReadLine();
+            // the following code hashes the entered password before it is stored in memory
             byte[] data = System.Text.Encoding.ASCII.GetBytes(this.password);
             data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
             String hash = System.Text.Encoding.ASCII.GetString(data);
-            //do
-            //{
-            //    ConsoleKeyInfo key = Console.ReadKey(true);
-            //    // Backspace Should Not Work
-            //    if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
-            //    {
-            //        password += key.KeyChar;
-            //        Console.Write("*");
-            //    }
-            //    else
-            //    {
-            //        if (key.Key == ConsoleKey.Backspace && password.Length > 0)
-            //        {
-            //            password = password.Substring(0, (password.Length - 1));
-            //            Console.Write("\b \b");
-            //        }
-            //        else if (key.Key == ConsoleKey.Enter)
-            //        {
-            //            break;
-            //        }
-            //    }
-            //} while (true);
             l.employees.Add(loginName);
             l.passwords.Add(hash);
             Console.WriteLine("\nNew account built, press enter to sign in at the main screen");
             Console.ReadLine();
             Authentication();
         }
-        public void Authentication()
+        public void Authentication() //Basic front-end menu
         {
             Console.Clear();
             Console.WriteLine("-------------------------------------------------------------------- \n");
@@ -87,7 +64,8 @@ namespace CybersecurityWebApp
             }
 
         }
-        public void Exit()
+        public void Exit() //Once the program is completed, this displays all of the usernames and 
+            //hashed passwords that are stored
         {
             int count = 0;
             Console.Clear();
@@ -104,9 +82,8 @@ namespace CybersecurityWebApp
             Thread.Sleep(2500);
             Environment.Exit(0);
         }
-        //Prompts the user for their login information
-        //need to hide the password entry
-        public void EnterInfo()
+        
+        public void EnterInfo() //Prompts the user for their login information
         {
             Console.Clear();
             Console.WriteLine("-------------------------------------------------------------------- \n");
@@ -117,7 +94,9 @@ namespace CybersecurityWebApp
             this.loginName = Convert.ToString(Console.ReadLine());
             while (!l.employees.Contains(loginName))
             {
-                Console.Write("This Login name doesn't exist try again, or enter 1 to exit: ");
+                Console.WriteLine("This Login name doesn't exist!\n" +
+                    "Please try again, or enter 1 to return to the home screen: ");
+                Console.Write(":>");
                 this.loginName = Convert.ToString(Console.ReadLine());
                 if (this.loginName == "1")
                 {
@@ -125,52 +104,52 @@ namespace CybersecurityWebApp
                     loop++;  
                 }
             }
-            //if (loop == 0)
-            //{
+            if (loop == 0)
+            {
                 Console.Write("Enter Password: ");
                 this.password = Console.ReadLine();
-                //do
-                //{
-                //    ConsoleKeyInfo key = Console.ReadKey(true);
-                //    // Backspace Should Not Work
-                //    if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
-                //    {
-                //        password += key.KeyChar;
-                //        Console.Write("*");
-                //    }
-                //    else
-                //    {
-                //        if (key.Key == ConsoleKey.Backspace && password.Length > 0)
-                //        {
-                //            password = password.Substring(0, (password.Length - 1));
-                //            Console.Write("\b \b");
-                //        }
-                //        else if (key.Key == ConsoleKey.Enter)
-                //        {
-                //            break;
-                //        }
-                //    }
-                //} while (true);
+            //do
+            //{
+            //    ConsoleKeyInfo key = Console.ReadKey(true);
+            //    // Backspace Should Not Work
+            //    if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+            //    {
+            //        password += key.KeyChar;
+            //        Console.Write("*");
+            //    }
+            //    else
+            //    {
+            //        if (key.Key == ConsoleKey.Backspace && password.Length > 0)
+            //        {
+            //            password = password.Substring(0, (password.Length - 1));
+            //            Console.Write("\b \b");
+            //        }
+            //        else if (key.Key == ConsoleKey.Enter)
+            //        {
+            //            break;
+            //        }
+            //    }
+            //} while (true);
                 byte[] data = System.Text.Encoding.ASCII.GetBytes(this.password);
                 data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
                 String hash = System.Text.Encoding.ASCII.GetString(data);
                 CheckInfo(this.loginName, hash);
-            //} else if (loop > 0)
-            //{
-            //    byte[] data = System.Text.Encoding.ASCII.GetBytes(this.password);
-            //    data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
-            //    String hash = System.Text.Encoding.ASCII.GetString(data);
-            //    CheckInfo(this.loginName, hash);
-            //}
-            
-        }
+        } else if (loop != 0)
+            {
+                byte[] data = System.Text.Encoding.ASCII.GetBytes(this.password);
+        data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+        String hash = System.Text.Encoding.ASCII.GetString(data);
+        CheckInfo(this.loginName, hash);
+    }
+
+}
         //This determines if the entered information is correct
         public void CheckInfo(string loginName, string password)
         {
             if (VerifyInfo(loginName, password) == true)
             {
                 Console.WriteLine("\nWelcome!");
-                Console.ReadLine();
+                Thread.Sleep(1000);
                 Exit();
             }
             else
