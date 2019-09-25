@@ -1,0 +1,7 @@
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebApp\obj\Debug\CybersecurityWebApp.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebApp\bin\Debug\CybersecurityWebApp.exe.config
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebApp\bin\Debug\CybersecurityWebApp.exe
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebApp\bin\Debug\CybersecurityWebApp.pdb
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebApp\obj\Debug\CybersecurityWebApp.exe
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebApp\obj\Debug\CybersecurityWebApp.pdb
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebApp\obj\Debug\CybersecurityWebApp.csprojAssemblyReference.cache

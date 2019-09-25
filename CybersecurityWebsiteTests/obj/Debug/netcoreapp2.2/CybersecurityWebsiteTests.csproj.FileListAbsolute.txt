@@ -1,0 +1,14 @@
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\bin\Debug\netcoreapp2.2\CybersecurityWebsiteTests.deps.json
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\bin\Debug\netcoreapp2.2\CybersecurityWebsiteTests.runtimeconfig.json
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\bin\Debug\netcoreapp2.2\CybersecurityWebsiteTests.runtimeconfig.dev.json
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\bin\Debug\netcoreapp2.2\CybersecurityWebsiteTests.dll
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\bin\Debug\netcoreapp2.2\CybersecurityWebsiteTests.pdb
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\obj\Debug\netcoreapp2.2\CybersecurityWebsiteTests.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\obj\Debug\netcoreapp2.2\CybersecurityWebsiteTests.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\obj\Debug\netcoreapp2.2\CybersecurityWebsiteTests.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\obj\Debug\netcoreapp2.2\CybersecurityWebsiteTests.AssemblyInfo.cs
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\obj\Debug\netcoreapp2.2\CybersecurityWebsiteTests.dll
+C:\Users\Alex\Documents\GitHub\Cybersecurity_Website\CybersecurityWebsiteTests\obj\Debug\netcoreapp2.2\CybersecurityWebsiteTests.pdb
