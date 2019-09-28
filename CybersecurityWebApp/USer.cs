@@ -150,7 +150,7 @@ namespace CybersecurityWebApp
             {
                 Console.WriteLine("\nWelcome!");
                 Thread.Sleep(1000);
-                Exit();
+                //Exit();
             }
             else
             {
