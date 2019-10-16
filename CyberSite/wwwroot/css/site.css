@@ -1,0 +1,128 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.block-display-center{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(100%, -50%);
+}
+.block-black{
+    color: #fff!important;
+    background-color: #000!important;
+}
+.block-opacity{
+    opacity: 0.80;
+}
+.block-padding-large{
+    padding: 16px 30px!important;
+}
+.block-round-large{
+    border-radius: 8px;
+}
+.text-xlarge{
+    font-size: 24!important;
+}
+.small-size {
+    max-width: 7%;
+    max-height: 7%;
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+a.navbar-sub {
+    white-space: normal;
+    text-align: left;
+    word-break: break-all;
+}
+
+#navcontainer ul {
+    background-color: #036;
+    color: White;
+    float: left;
+    width: 100%;
+    font-family: arial, helvetica, sans-serif;
+    box-shadow: 0 2px 2px -2px rgb(0, 0, 0);
+}
+
+    #navcontainer ul li {
+        display: inline;
+    }
+
+        #navcontainer ul li a {
+            padding: 0.2em 1em;
+            /*background-color: #036;*/
+            background: transparent;
+            border-color: transparent;
+            box-shadow: none;
+            color: White;
+            text-decoration:wavy;
+            float:none;
+            /*border-right: 1px solid #fff;*/
+        }
+
+            #navcontainer ul li a:hover {
+                background-color: hsl(205, 100%, 50%, 0.2);
+                -webkit-transition: background-color 0.5s;
+                -moz-transition: background-color 0.5s;
+                -o-transition: background-color 0.5s;
+                /*color: #fff;*/
+            }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid rgb(0, 0, 0);
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url('../content/cybersecurity-background-3.jpg');
+    background-color: rgba(255,255,255, 0.25);
+    background-blend-mode: lighten;
+}
+.footer {
+    background-color: rgba(0,51,102, 1);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    line-height: 40px; /* Vertically center the text there */
+}
+
+h1{
+    text-width= device-width;
+}
