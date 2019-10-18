@@ -1,0 +1,134 @@
+﻿@model IEnumerable<CyberSite.Models.Report>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<br />
+<h1 class="text-xlarge text-center"><font color="white">View Reports</font></h1>
+<hr />
+
+@*<div class="block-black block-opacity block-round-large block-padding-large">
+    <p class="text-center"><a asp-action="Create"><b>Create New</b></a> | <a asp-action="Search"><b>Search</b></a></p>
+        </div>*@
+<br />
+<div class="table100">
+    <table>
+        <link href="~/css/main.css" rel="stylesheet" />
+        <thead>
+            <tr class="table100-head">
+                <th class="column1">
+                    @*@Html.DisplayNameFor(model => model.CustomerName)*@
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]">@Html.DisplayNameFor(model => model.CustomerName)</a>
+                </th>
+                <th class="column2">
+                    @Html.DisplayNameFor(model => model.CompanyName)
+                </th>
+                <th class="column3">
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th class="column4">
+                    @Html.DisplayNameFor(model => model.ReportType)
+                </th>
+                <th class="column5">
+                    @Html.DisplayNameFor(model => model.ReportDescription)
+                </th>
+                <th class="column6">
+                    @*@Html.DisplayNameFor(model => model.ReportDate)*@
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">@Html.DisplayNameFor(model => model.ReportDate)</a>
+                </th>
+                <th class="column6">
+                    Options
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="column1">
+                        @Html.DisplayFor(modelItem => item.CustomerName)
+                    </td>
+                    <td class="column2">
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+                    <td class="column3">
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td class="column4">
+                        @Html.DisplayFor(modelItem => item.ReportType)
+                    </td>
+                    <td class="column5">
+                        @Html.DisplayFor(modelItem => item.ReportDescription)
+                    </td>
+                    <td class="column6">
+                        @Html.DisplayFor(modelItem => item.ReportDate)
+                    </td>
+                    <td class="column7">
+                        <font size="2">
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </font>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+</div>
+@*<table>
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CustomerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CompanyName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ReportType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ReportDescription)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ReportDate)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportDate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex\\Desktop\\CyberSite\\CyberSite.csproj": {}
+    "C:\\Users\\Alex\\Documents\\GitHub\\Cybersecurity_Website\\CyberSite\\CyberSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\Desktop\\CyberSite\\CyberSite.csproj": {
+    "C:\\Users\\Alex\\Documents\\GitHub\\Cybersecurity_Website\\CyberSite\\CyberSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\Desktop\\CyberSite\\CyberSite.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\Documents\\GitHub\\Cybersecurity_Website\\CyberSite\\CyberSite.csproj",
         "projectName": "CyberSite",
-        "projectPath": "C:\\Users\\Alex\\Desktop\\CyberSite\\CyberSite.csproj",
+        "projectPath": "C:\\Users\\Alex\\Documents\\GitHub\\Cybersecurity_Website\\CyberSite\\CyberSite.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\Desktop\\CyberSite\\obj\\",
+        "outputPath": "C:\\Users\\Alex\\Documents\\GitHub\\Cybersecurity_Website\\CyberSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
             }
           },
           "imports": [

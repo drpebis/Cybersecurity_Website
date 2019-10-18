@@ -1,18 +1,34 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 .block-display-center{
     position: absolute;
-    top: 50%;
+    top: 50%!important;
     left: 0%;
     transform: translate(100%, -50%);
 }
+
+.block-display-left {
+    position: absolute;
+    top: 18%!important;
+    left: -30%;
+    transform: translate(100%, -50%);
+}
+
 .block-black{
     color: #fff!important;
     background-color: #000!important;
 }
 .block-opacity{
-    opacity: 0.80;
+    opacity: 0.70;
 }
 .block-padding-large{
     padding: 16px 30px!important;
@@ -86,7 +102,7 @@ html {
   border-top: 1px solid rgb(0, 0, 0);
 }
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #000000;
 }
 
 .box-shadow {
@@ -109,7 +125,7 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
     background-image: url('../content/cybersecurity-background-3.jpg');
-    background-color: rgba(255,255,255, 0.25);
+    background-color: rgba(255,255,255, 0.1);
     background-blend-mode: lighten;
 }
 .footer {
@@ -126,3 +142,59 @@ body {
 h1{
     text-width= device-width;
 }
+
+table.steelBlueCols {
+    border: 4px solid #555555;
+    background-color: #555555;
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+    table.steelBlueCols td, table.steelBlueCols th {
+        border: 1px solid #555555;
+        padding: 5px 10px;
+    }
+
+    table.steelBlueCols tbody td {
+        font-size: 12px;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    table.steelBlueCols td:nth-child(even) {
+        background: #398AA4;
+    }
+
+    table.steelBlueCols thead {
+        background: #398AA4;
+        border-bottom: 10px solid #398AA4;
+    }
+
+        table.steelBlueCols thead th {
+            font-size: 15px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-align: left;
+            border-left: 2px solid #398AA4;
+        }
+
+            table.steelBlueCols thead th:first-child {
+                border-left: none;
+            }
+
+    table.steelBlueCols tfoot td {
+        font-size: 13px;
+    }
+
+    table.steelBlueCols tfoot .links {
+        text-align: right;
+    }
+
+        table.steelBlueCols tfoot .links a {
+            display: inline-block;
+            background: #FFFFFF;
+            color: #398AA4;
+            padding: 2px 8px;
+            border-radius: 5px;
+        }

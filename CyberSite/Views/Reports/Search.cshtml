@@ -1,0 +1,20 @@
+﻿@model CyberSite.Models.Report
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<br />
+<h1 class="text-xlarge text-center"><font color="white">Search Reports</font></h1>
+<hr />
+    <div class="row block-black block-opacity block-round-large block-padding-large">
+        <form asp-action="Index" method="get">
+            <div class="form-actions no-color">
+                <p>
+                    Find by name: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" />
+                    <input type="submit" value="Search" class="btn btn-primary" /> |
+                    <a asp-action="Index">Back to Full List</a>
+                </p>
+            </div>
+        </form>
+    </div>
